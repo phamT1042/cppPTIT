@@ -1,5 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
+//Given a matrix of ‘O’ and ‘X’, find the largest subsquare surrounded by ‘X’
 char a[21][21];
 int solve (int n) {
     int cot[n + 1][n + 1], hang[n + 1][n + 1];
