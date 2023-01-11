@@ -2,7 +2,7 @@
 using namespace std; 
 int n;
 map<int, int> ts;
-void Try () {
+void Try () {                     //Tach tu va mau thanh cac thua so nguyen to roi triet tieu di
     for (int i = n + 2; i <= 2 * n; i++) {
         int test = i;
         for (int j = 2; j <= test; j++) {
@@ -22,7 +22,7 @@ void Try () {
         }
     }
 }
-string nhan (string a, string b) {
+string nhan (string a, string b) {  //nhan 2 so nguyen lon
     reverse(a.begin(), a.end());
 	reverse(b.begin(), b.end());
 	vector<int> cal(a.length() + b.length());
@@ -49,10 +49,9 @@ string nhan (string a, string b) {
 	if (res.length() == 0) return "0";
 	return res;
 }
-void solve() {
+void solve() {       //nhan cac thua so nguyen to voi so mu con lai
     string result = "1";
     for (auto it : ts) {
-        if (it.second == 0) continue;
         while (it.second > 0) {
             result = nhan(result, to_string(it.first));
             it.second--;
