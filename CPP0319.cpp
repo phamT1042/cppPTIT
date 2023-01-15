@@ -11,7 +11,7 @@ int main() {
 			int i = 0;
 			for (i = 0; i < m; i++) {
 				if (s < 10) {
-					a[i++] = s;
+					a[i] = s;
 					break;
 				} else {
 					a[i] = 9;
@@ -23,7 +23,7 @@ int main() {
 			}
 			if (b[0] == 0) {
 				b[0] = 1;
-			    i = 1;
+			        i = 1;
 				while (b[i] == 0) i++;
 				b[i] -= 1;
 			}
