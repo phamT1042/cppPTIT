@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-//Minimum swap required to Sort an Array
+//Minimum swap required to Sort an Array of N distinct elements
 int main() {
 	int t; cin >> t;
 	while (t--) {
