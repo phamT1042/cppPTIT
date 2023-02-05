@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-unordered_map<int, int> mp;
+map<int, int> mp;
 bool cmp(int a, int b) {
 	if (mp[a] == mp[b]) return a < b;
 	return mp[a] > mp[b];
